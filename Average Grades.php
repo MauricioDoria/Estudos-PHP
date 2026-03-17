@@ -28,7 +28,5 @@ if ($media >= 7 ){
 }else{
     echo "REPROVADO";
 }
-
-
-
+echo "\n..";
 ?>
