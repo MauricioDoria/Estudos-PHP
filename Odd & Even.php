@@ -1,15 +1,16 @@
 <?php 
 
 $Number = []; $Even = []; $Odd = [];
+echo "Digite os numeros separandos por ' , ' :";$txt =trim(fgets(STDIN));
+$Number = explode(',' , $txt);
+$Number = array_map('intval',$Number);
 
-for ($i = 1;$i <6; $i++){
-    echo "Digite o $i º numero ";$Number[] = (int)trim(fgets(STDIN));
-    echo PHP_EOL;
+foreach ($Number as $n){
+    echo $n . PHP_EOL;
+    if ($n % 2 == 0){
+        $Even[] = $n;
+    }else{$Odd[] = $n;}
 }
-foreach ($Number as $n)
-if ($n % 2 == 0){
-    $Even[] = $n;
-}else{$Odd[] = $n;}
 echo 'Temos ' .count($Even) . ' numeros pares e ' . count($Odd) .' numreos impares...' . PHP_EOL;
 foreach ($Even as $Even){
     echo " $Even é Par ";

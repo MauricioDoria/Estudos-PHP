@@ -1,0 +1,11 @@
+<?php 
+
+$texto = trim(fgets(STDIN));
+$array = [];
+$array = explode (',', $texto);
+
+
+foreach($array as $text){
+    echo $text . PHP_EOL;
+}
+?>
