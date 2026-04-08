@@ -1,4 +1,5 @@
 <?php 
+echo '---ODD & EVEN---' . PHP_EOL; #titulo
 
 $Number = []; $Even = []; $Odd = [];
 echo "Digite os numeros separandos por ' , ' :";$txt =trim(fgets(STDIN));
