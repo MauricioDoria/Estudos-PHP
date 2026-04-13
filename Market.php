@@ -13,14 +13,14 @@ $list = [
     'açucar' => 4.20 
 ];
 while (True){
-    echo 'Qual Produto: ';$product = strtolower(trim(fgets(STDIN)));
+    echo 'Product: ';$product = strtolower(trim(fgets(STDIN)));
     
     if ($list[$product] == true){
-        echo PHP_EOL . 'Unidades: '; $uni = trim(fgets(STDIN));
+        echo PHP_EOL . 'Units: '; $uni = trim(fgets(STDIN));
         $Vtotal += $list[$product] * $uni;
     }
     else {
-        echo PHP_EOL. 'Não esta em';
+        echo PHP_EOL. 'Not Available';
     }
     echo "\nPARAR [s]";$option = strtoupper(trim(fgets(STDIN)));
     if ($option[0] == 'S'){
