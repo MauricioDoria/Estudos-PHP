@@ -1,12 +1,11 @@
 <?php 
 $media=0;
-echo 'Student Name: ' ; $aluno = trim(fgets(STDIN));
-if (is_numeric($aluno[0]) == true ){
+echo 'Student Name: ' ; $nameStudent = trim(fgets(STDIN));
+if (is_numeric($nameStudent[0]) == true ){
     echo "ERRRo!!! ...\n";
-    echo 'Student Name: ' ; $aluno = trim(fgets(STDIN));
+    echo 'Student Name: ' ; $nameStudent = trim(fgets(STDIN));
     
 }
-
 for ($i=1; $i < 5; $i++) {
     echo "\nEnter the $i ª note: " ; $nota = (float)trim(fgets(STDIN));
     while (is_numeric($nota) == false){
@@ -20,7 +19,7 @@ for ($i=1; $i < 5; $i++) {
 }
 $media /= 4;
 
-echo "The student '$aluno' has an average of $media and he...  ";
+echo "The student '$nameStudent' has an average of $media and he...  ";
 sleep(2);
 if ($media >= 7 ){
     echo "Approved";
