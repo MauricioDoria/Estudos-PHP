@@ -30,8 +30,3 @@ while (True){
     echo "\n$Vtotal\n";
 }
 echo "Total Purchase Prince: $Vtotal";
-
-
-
-
-?>
