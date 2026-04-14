@@ -21,5 +21,3 @@ foreach ($Odd as $Odd){
     echo " $Odd is Odd ";
 }
 
-
-?>
