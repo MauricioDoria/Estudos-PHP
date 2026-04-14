@@ -30,4 +30,3 @@ if ($media >= 7 ){
     echo "Failed";
 }
 echo "\n..";
-?>
