@@ -32,13 +32,3 @@ else{
     echo PHP_EOL . 'NEW BALANCE ' . PHP_EOL . ($balance + $deposit);
 
 }
-
-
-
-
-
-
-
-
- 
-?>
