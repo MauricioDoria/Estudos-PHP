@@ -12,6 +12,8 @@ $list = [
     'bread' => 4.00,
     'sugar' => 4.20 
 ];
+
+
 while (True){
     echo 'Product: ';$product = strtolower(trim(fgets(STDIN)));
     
