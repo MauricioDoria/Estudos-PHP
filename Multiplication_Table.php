@@ -1,6 +1,6 @@
 <?php
-$mop = 'Y';
-while ($mop == 'Y'){ 
+$MenuOption = 'Y';
+while ($MenuOption == 'Y'){ 
 
     echo "What is your choice: [0]Two Numbers [1]Complete Multiplication Table: ";$op = trim(fgets(STDIN));
     while (is_numeric($op) == false or $op > 1){
@@ -18,9 +18,9 @@ while ($mop == 'Y'){
             echo "$n1 * $number = ". $n1 * $number . PHP_EOL;
     }
 
-    echo PHP_EOL . 'Do you wish to continue: [Y]Yes [N]No: 0'; $mop = strtoupper(trim(fgets(STDIN)));
-    while (is_numeric($mop) == true or $mop != 'Y' and $mop != 'N'){
-        echo PHP_EOL . 'Continue: '; $mop = strtoupper(trim(fgets(STDIN)));
+    echo PHP_EOL . 'Do you wish to continue: [Y]Yes [N]No: 0'; $MenuOption = strtoupper(trim(fgets(STDIN)));
+    while (is_numeric($MenuOption) == true or $MenuOption != 'Y' and $MenuOption != 'N'){
+        echo PHP_EOL . 'Continue: '; $MenuOption = strtoupper(trim(fgets(STDIN)));
     }
 
 }
