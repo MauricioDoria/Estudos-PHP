@@ -6,11 +6,11 @@ echo "Enter numbers separated by ' , ': ";$txt =trim(fgets(STDIN));
 $Number = explode(',' , $txt);
 $Number = array_map('intval',$Number);#transforma em Inteiro | Convert to integer
 
-foreach ($Number as $n){
+foreach ($Number as $num){
     echo $n . PHP_EOL;
     if ($n % 2 == 0){
-        $Even[] = $n;
-    }else{$Odd[] = $n;}
+        $Even[] = $num;
+    }else{$Odd[] = $num;}
 }
 echo 'We have ' .count($Even) . ' even numbers and ' . count($Odd) .' odd numbers...' . PHP_EOL;
 foreach ($Even as $Even){
