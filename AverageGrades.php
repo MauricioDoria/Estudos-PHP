@@ -15,7 +15,6 @@ for ($i=1; $i < 5; $i++) {
         $nota = 0;
     }
     $media += $nota;
-    echo $media;
 }
 $media /= 4;
 
