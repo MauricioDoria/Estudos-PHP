@@ -1,6 +1,5 @@
 <?php 
 $balance = random_int(10000, 150000) / 100;
-
 echo"AVAILABLE BALANCE: $balance \n" ;
 
 #Sistema de Opção | Option System
@@ -28,7 +27,5 @@ else{
         echo 'ERRO' . PHP_EOL;
         echo PHP_EOL . 'DEPOSIT AMOUNT ' ;$deposit = (float)trim(fgets(STDIN));
     }
-
     echo PHP_EOL . 'NEW BALANCE ' . PHP_EOL . ($balance + $deposit);
-
 }
