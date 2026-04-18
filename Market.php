@@ -13,7 +13,7 @@ $list = [
     'sugar' => 4.20 
 ];
 
-
+#verificação de produto
 while (True){
     echo 'Product: ';$product = strtolower(trim(fgets(STDIN)));
     
