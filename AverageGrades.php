@@ -4,7 +4,6 @@ echo 'Student Name: ' ; $nameStudent = trim(fgets(STDIN));
 if (is_numeric($nameStudent[0]) == true ){
     echo "ERRRo!!! ...\n";
     echo 'Student Name: ' ; $nameStudent = trim(fgets(STDIN));
-    
 }
 for ($i=1; $i < 5; $i++) {
     echo "\nEnter the $i ª note: " ; $nota = (float)trim(fgets(STDIN));
