@@ -27,8 +27,7 @@ while (True){
     echo "\nSTOP [Y]";$option = strtoupper(trim(fgets(STDIN)));
     if ($option[0] == 'Y'){
         break;
-    }
-    
+    }  
     echo "\n$Vtotal\n";
 }
 echo "Total Purchase Prince: $Vtotal";
